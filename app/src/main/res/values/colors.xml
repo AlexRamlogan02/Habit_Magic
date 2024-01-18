@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="Eminence">#55286F</color>
+    <color name="African_Violet">#AA7BC3</color>
+    <color name="Lilac">#CC92C2</color>
+    <color name="Mint_green">#C2EFEB</color>
+    <color name="Linen">#F7ECE1</color>
 </resources>
