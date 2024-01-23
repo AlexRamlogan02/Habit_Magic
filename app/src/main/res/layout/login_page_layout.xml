@@ -7,7 +7,9 @@
     android:background="@drawable/light_gradient">
 
     <TextView
-        android:id="@+id/habit"
+        android:id="@+id/habit_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="232dp"
         android:layout_height="95dp"
         android:layout_alignParentTop="true"
@@ -17,11 +19,86 @@
         android:gravity="center"
         android:text="Habit"
         android:textColor="@color/Linen"
-        android:textSize="42sp"
-        android:shadowColor="@color/African_Violet"
-        android:shadowDx="3"
-        android:shadowDy="6"
-        android:shadowRadius="0"
+        android:textSize="42sp"/>
+
+    <TextView
+        android:id="@+id/magic_title"
+        android:layout_width="258dp"
+        android:layout_height="112dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/kaoly"
+        android:text="Magic"
+        android:textColor="@color/Linen"
+        android:textSize="64sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/coffee"
+        android:text="@string/loginErrorHint"
+        android:textColor="#D82E2E"
+        app:layout_constraintBottom_toTopOf="@id/loginField"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        android:id="@+id/loginErrorText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="352dp"
+        android:gravity="center"
+        android:id="@+id/loginField"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <EditText
+            android:layout_width="279dp"
+            android:layout_height="51dp"
+            android:inputType="text"
+            android:id="@+id/usernameInput"
+            android:hint="@string/usernameHint"
+            android:textColorHint="@color/Linen"
+            android:textColor="@color/Linen"
+            android:fontFamily="@font/coffee"
+            android:autofillHints="username" />
+        <EditText
+            android:layout_width="279dp"
+            android:layout_height="51dp"
+            android:id="@+id/passwordField"
+            android:inputType="textPassword"
+            android:hint="@string/passwordHint"
+            android:textColorHint="@color/Linen"
+            android:textColor="@color/Linen"
+            android:fontFamily="@font/coffee"
+            android:autofillHints="password"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="156dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/African_Violet"
+        android:fontFamily="@font/magica"
+        android:text="@string/loginButtonText"
+        android:textColor="@color/Linen"
+        app:layout_constraintLeft_toLeftOf="@id/loginField"
+        app:layout_constraintTop_toBottomOf="@id/loginField" />
+
+    <Button
+        android:layout_width="156dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/African_Violet"
+        android:fontFamily="@font/magica"
+        android:text="@string/registerButtonText"
+        android:textColor="@color/Linen"
+        app:layout_constraintLeft_toLeftOf="@id/loginButton"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
