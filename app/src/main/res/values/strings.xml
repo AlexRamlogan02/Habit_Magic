@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Habit Magic</string>
+    <string name="registerButtonText">Register</string>
+    <string name="loginButtonText">Login</string>
+    <string name="passwordHint">Password</string>
+    <string name="usernameHint">Username</string>
+    <string name="loginErrorHint">Wrong username and/or password!</string>
 </resources>
